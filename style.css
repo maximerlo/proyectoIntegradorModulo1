@@ -1,0 +1,95 @@
+@font-face {
+  font-family:'Anton';
+  src: url(Fuentes/Anton/Anton-Regular.ttf);
+}
+@font-face {
+  font-family:'Fjalla';
+  src: url(Fuentes/Fjalla_One/);
+}
+@font-face {
+  font-family:'Oswald-Light';
+  src: url(Fuentes/Oswald/static/Oswald-Light.ttf);
+}
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+
+.header{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.ul-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color:white;
+  width: 50%;
+  
+}
+
+.logo a, p{
+  color:rgb(161, 0, 0);
+  font-size: 3rem;
+  font-family: 'Anton';
+  text-decoration: none;
+}
+.ul-nav a{
+  text-decoration: none;
+  list-style: none;
+  color:white;
+  font-size: 1.5rem;
+  font-family:'Oswald-Light';
+}
+
+
+
+/*.carousel {
+  width: 100%;
+  height: 768px;
+
+}
+
+.carousel-inner> .carousel-item> img { 
+  object-fit: contain;
+}*/
+
+
+
+
+
+/*.carousel-inner img {
+ 
+  
+}
+.carousel-item{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}*/
+
+/* .carousel-inner img {
+  display: flex;
+ 
+  height: 100vh;
+  width: 100vw;
+} */
+
+.carousel-item img{
+  object-fit: cover;
+  min-width: 100vw;
+  max-height: 500px;
+}
