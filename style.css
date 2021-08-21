@@ -55,6 +55,45 @@ margin: 0;
   font-family:'Oswald-Light';
 }
 
+main{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(19, 18, 18)
+}
+.section-card-info{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.section-card-info h2{
+color: brown;
+}
+
+.card-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  flex-wrap: wrap;
+  
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 160px;
+  height: 300px;
+}
 
 
 /*.carousel {
@@ -88,8 +127,45 @@ margin: 0;
   width: 100vw;
 } */
 
+
+/*////////////para que el botón no quede marcado por el hover///
+a {
+   -webkit-tap-highlight-color: rgba(0,0,0,0)
+  }
+  //////////////////*/
+
 .carousel-item img{
   object-fit: cover;
   min-width: 100vw;
   max-height: 500px;
+  /*bajar el max-heigt para responsive*/
 }
+
+@media (max-width:1205px) and (min-width:960px)  {
+  .carousel-item img{
+    max-height: 400px;
+    
+  }
+}
+
+@media (max-width:959px) and (min-width:720px)  {
+  .carousel-item img{
+    max-height: 300px;
+    
+  }
+}
+
+@media (max-width:719px) and (min-width:485px)  {
+  .carousel-item img{
+    max-height: 200px;
+    
+  }
+}
+
+@media (max-width:484px) and (min-width:300px)  {
+  .carousel-item img{
+    max-height: 120px;
+    
+  }
+}
+
