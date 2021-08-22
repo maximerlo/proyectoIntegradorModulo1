@@ -86,13 +86,15 @@ color: brown;
 
 }
 
-.card{
+.card-info{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
   width: 160px;
-  height: 300px;
+  height: 30%;
+  text-align: center;
+  background-color: red;
 }
 
 
@@ -133,11 +135,18 @@ a {
    -webkit-tap-highlight-color: rgba(0,0,0,0)
   }
   //////////////////*/
+/*.carousel-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}*/
 
 .carousel-item img{
   object-fit: cover;
   min-width: 100vw;
   max-height: 500px;
+  
   /*bajar el max-heigt para responsive*/
 }
 
@@ -164,8 +173,15 @@ a {
 
 @media (max-width:484px) and (min-width:300px)  {
   .carousel-item img{
-    max-height: 120px;
+    max-height: 155px;
     
   }
+.logo a, p {
+  font-size: 2rem;
+}
+.ul-nav a{
+  width: 70%;
+  font-size: 0.8rem;
+}
 }
 
