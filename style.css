@@ -17,19 +17,36 @@ padding: 0;
 margin: 0;
 
 }
-
+body{
+  width: 100%;
+  height: 100%;
+}
 .header{
   background-color: black;
   width: 100%;
   height: 100vh;
   
+  
 }
 
-.navbar{
+.section-nav{
+  width: 100%;
+  height: auto;
+  position: sticky;
+  z-index: 50;
+  top:0;
+  background-color: #0000009c;
+
+  
+}
+
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  height: 70px;
+  
 }
 .ul-nav {
   display: flex;
@@ -38,7 +55,7 @@ margin: 0;
   align-items: center;
   color:white;
   width: 50%;
-  
+  text-align: center;
 }
 
 .logo a, p{
@@ -53,6 +70,7 @@ margin: 0;
   color:white;
   font-size: 1.5rem;
   font-family:'Oswald-Light';
+
 }
 
 main{
@@ -64,9 +82,10 @@ main{
 .section-card-info{
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   flex-direction: column;
   align-items: center;
+  border:violet 2px solid;
 
 }
 
@@ -80,13 +99,15 @@ color: brown;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 85%;
+
   flex-wrap: wrap;
+  max-height: auto;
+  border:2px red solid;
   
 
 }
 
-.card-info{
+.card-element{
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -94,7 +115,7 @@ color: brown;
   width: 160px;
   height: 30%;
   text-align: center;
-  background-color: red;
+  background-color: #323446;
 }
 
 
@@ -142,9 +163,10 @@ a {
 
 }*/
 
+
+
 .carousel-item img{
   object-fit: cover;
-  min-width: 100vw;
   max-height: 500px;
   
   /*bajar el max-heigt para responsive*/
@@ -182,6 +204,14 @@ a {
 .ul-nav a{
   width: 70%;
   font-size: 0.8rem;
+}
+.card-element{
+  width: 250px;
+  height: 350px;
+  margin-bottom: 1rem;
+}
+main{
+  height: auto;
 }
 }
 
