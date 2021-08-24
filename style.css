@@ -29,7 +29,11 @@ body{
 }
 header{
   width: 100%;
-  
+  height: 10vh;
+  position: sticky;
+  top:0;
+  z-index: 10;
+  background-color: black;
 }
 
 .navbar1 {
@@ -39,8 +43,8 @@ header{
   align-items: center;
   width: 100%;
   height: 10vh;
-  position: fixed;
-  z-index: 10;
+  /* position: fixed;
+  z-index: 10; */
   background-color: #0000008c;
   
 }
@@ -54,12 +58,29 @@ header{
   text-align: center;
 }
 
-.logo a, p{
+.logo a {
+  text-decoration: none;
+}
+.spanLogo{
   color:rgb(161, 0, 0);
   font-size: 3rem;
   font-family: 'Anton';
   text-decoration: none;
 }
+
+.spanEslogan{
+  color:rgb(44, 70, 78);
+  font-size: 1rem;
+  font-family: 'Anton';
+  text-decoration: none;
+}
+.logo-wrapper{
+  width:20%;
+  height: 50px;
+}
+
+  
+
 .ul-nav a{
   text-decoration: none;
   list-style: none;
@@ -76,7 +97,7 @@ main{
 }
 
 
-.section-featured-container{
+/* .section-featured-container{
   display: flex;
   flex-direction: column;
   width:100%;
@@ -189,39 +210,12 @@ color: brown;
   height: 350px;
   text-align: center;
   background-color: #323446;
-}
-
-
-/*.carousel {
-  width: 100%;
-  height: 768px;
-
-}
-
-.carousel-inner> .carousel-item> img { 
-  object-fit: contain;
-}*/
-
-
-
-
-
-/*.carousel-inner img {
- 
-  
-}
-.carousel-item{
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-}*/
-
-/* .carousel-inner img {
-  display: flex;
- 
-  height: 100vh;
-  width: 100vw;
 } */
+
+
+
+
+ 
 
 
 /*////////////para que el botón no quede marcado por el hover///
@@ -229,22 +223,91 @@ a {
    -webkit-tap-highlight-color: rgba(0,0,0,0)
   }
   //////////////////*/
-/*.carousel-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}*/
 
+
+
+  
+  /*bajar el max-heigt para responsive*/
+
+
+.carouselContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position:relative;
+width: 100%;
+height: auto;
+}
 
 .carousel{
   background-color: black;
 }
 .carousel-item img{
   object-fit: cover;
-  max-height: 550px;
+  max-height: 460px;
+}
+.filler{
+  width: 25vw;
+  height: 500px;
+  background-color: black;
   
-  /*bajar el max-heigt para responsive*/
+}
+
+.info-page{
+  width: 100vw;
+  height: 500px;
+  padding-left: 1.5%;
+  position:absolute;
+  z-index: 2;
+ background: rgb(0,0,0);
+ background: linear-gradient(90deg, rgba(0,0,0,0.9710259103641457) 23%, rgba(75,0,0,0.9009978991596639) 27%, rgba(213,0,0,0.6825105042016807) 32%, rgba(235,144,144,0.3519782913165266) 48%, rgba(252,252,252,0) 70%);
+}
+
+.info-page p{
+  color:rgb(203, 210, 214);
+}
+
+.bigLogo{
+  font-size: 7rem;
+}
+.bigEslogan{
+  font-size: 4rem;
+}
+
+.description-principal{
+width: 40%;
+font-family:'PoiretOne';
+font-size: 1rem;
+font-weight: 500;
+}
+
+.btnWelcome{
+  margin-top: 3%;
+width: 40%;
+}
+
+.btnWelcome button{
+border-radius: 20px;
+width: 100px;
+font-family:'Oswald-Light';
+font-weight: 600;
+margin: 0 10px;
+font-size: 0.8rem;
+padding: 3px;
+letter-spacing: 1px;
+text-transform: uppercase;
+border: none;
+
+}
+
+.btnWel-1{
+  background-color:rgb(161, 0, 0);
+  color:white;
+}
+
+.btnWel-2{
+  color:rgb(161, 0, 0);
 }
 
 @media (max-width:1205px) and (min-width:960px)  {
