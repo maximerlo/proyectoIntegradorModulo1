@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <title>proyecto integrador</title>
 </head>
@@ -33,7 +34,7 @@
         <a href="">
           <li>Galería</li>
         </a>
-        <a href="">
+        <a href="#ingreso">
           <li>Ingreso</li>
         </a>
         <a href="">
@@ -42,7 +43,16 @@
         
       </ul>
     </nav>
+
   </header>
+  <div id="ingreso" class="modal">
+    <div class="modal-contenido">
+      <a href="#">X</a>
+      <h2>Mi primer Modal</h2>
+      <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
+    </div>  
+  </div>
+
   <main>
    <div class="carouselContainer">
     <div class="filler"></div>
@@ -98,7 +108,140 @@
         </div>
         
     </div>
+    
    </div>
+   <div class="social-container">
+    <a href="">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-twitter"></i>
+    </a>
+ </div>
+
+   <section class="sectionHome highlightWrapper">
+     <div class="highlightBox favoriteHL">
+      <div class="imgHL">
+        <img src="https://media.istockphoto.com/vectors/clapper-board-colored-vector-illustration-vector-id494151808?k=20&m=494151808&s=612x612&w=0&h=tQirTdWChlHNJGqM8q8sqAJNqiMYXufjltKGCy2__XQ=" alt="">
+      </div> 
+      
+      <h4>Favoritos</h4>
+      <p>Agrega las películas y series que más te gustan a tu lista de <strong>favoritos</strong></p>
+     </div>
+     <div class="highlightBox rateHL">
+      <div class="imgHL">
+        <img src="https://thumbs.dreamstime.com/b/se%C3%B1alar-la-mano-y-clasificaci%C3%B3n-de-estrella-comentario-del-cliente-grado-concepto-reacci%C3%B3n-usuario-108603713.jpg" alt="">
+      </div>
+      
+      <h4>Califica</h4>
+      <p><strong>Califica</strong> cada pelicula con un rango de 5 estrellas y comparte tu reacción</p> 
+     </div>
+
+     <div class="highlightBox reviewHL">
+      <div class="imgHL">
+        <img src="https://sopromatguru.ru/images/ser03.png" alt="">
+      </div>
+      
+      <h4>Reseña</h4>
+      <p>Escribe y explora <strong>reseñas</strong> de lo más variadas del cine y televisión</p> 
+    
+     </div>
+     <div class="highlightBox friendsHL">
+      <div class="imgHL">
+        <img src="https://cdn.altalang.com/wp-content/uploads/2019/11/21224251/conversation.jpg" alt="">
+      </div>
+      <h4>Amigos</h4>
+      <p>Agrega <strong>amigos</strong> que compartan tu mismo amor por el séptimo arte</p> 
+     </div>
+
+   </section>
+
+   <section  class="sectionHome accessibility">
+    <div class="accessBox">
+      <div class="imgAccess">
+        <img src="./imagenes/downloadApp.jpg" alt="">
+
+      </div>
+      
+      <h4>Ver donde quieras, cuando quieras</h4>
+      <p>Disfrutalo desde cualquier dispositivo: en tu celular, tablet, computadora y Smart TV</p>
+      
+    </div>
+    <div class="accessBox">
+      <div class="imgAccess">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/PV_Benefits_Devices_UPDATED.png" alt="">
+      </div> 
+      <h4>Descarga gratis y disfruta </h4>
+      <p>Desde nuestra App sigue disfrutando de todo el contenido que ofrecemos</p>
+
+    </div>
+    <div class="accessBox">
+      <div class="imgAccess">
+        <img src="https://1.bp.blogspot.com/-LR1IT5gc5uM/XjSmYvCVxyI/AAAAAAAApa4/xdsxehXEW90AUz4gVuxB_CFOo2H6G-8rwCLcBGAsYHQ/s1600/Movies%2B2019.png" alt="">
+
+      </div>
+      
+      <h4>Actualizado en todo momento</h4>
+      <p>Contenido exclusivo y actualizado en todo momento, enterate de las  ultimas novedades</p>
+      <!-- este box podria ser para personas con discapacidad visual  -->
+    </div>
+
+
+   </section>
+  </main>
+
+  <footer>
+    <section class="footer-social">
+      <div class="social-container">
+        <a href="">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-twitter"></i>
+        </a>
+        
+        <!-- <img src="iconos/facebook.png" alt="">
+        <img src="iconos/instagram.png" alt="">
+        <img src="iconos/twitter.png" alt="">
+        <img src="iconos/youtube.png" alt=""> -->
+      </div>
+    </section>
+
+    <section class="footer-info">
+
+      <div class="container-support"></div>
+      <div class="container-log"></div>
+
+    </section>
+
+    
+
+    <section class="footer-copyright">
+
+    </section>
+
+
+  </footer>
+
+
+
+
+
+
+
+
 
     <!-- <section class="section-featured-container">
       <h2>Lo desctacado de hoy</h2>
@@ -200,12 +343,7 @@
 
 
     </section> -->
-  </main>
-
-
-  <footer>
-
-  </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
