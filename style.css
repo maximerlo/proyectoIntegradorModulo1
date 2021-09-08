@@ -330,6 +330,7 @@ border: none;
 .btnWel-1{
   background-color:rgb(161, 0, 0);
   color:white;
+  
 }
 
 .btnWel-2{
@@ -489,11 +490,12 @@ footer {
 .backgroundLogin{
   display: flex;
   width: 100%;
-  height: 100vhlllllllllllllllllllllllllllllllllllllllllllllll;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url(https://risingjunkiri.com/wp-content/uploads/2015/01/movie-montage.jpg) no-repeat center;
-  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://risingjunkiri.com/wp-content/uploads/2015/01/movie-montage.jpg) no-repeat center;
+  background-size:cover;
+  
   /*buscar como se oscurece una imagen*/
   /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
 }
@@ -507,25 +509,22 @@ footer {
 }*/
 
 
-.clearfix:after,.clearfix:before{content:'';display:table}
-.clearfix:after{clear:both;display:block}
-a{color:inherit;text-decoration:none}
+
 
 .login-wrap{
 	width:100%;
-	margin:auto;
+	margin:0;
 	max-width:500px;
-	height:400px;
+	height:96vh;
 	position:relative;
-	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
 	width:100%;
 	height:100%;
 	position:absolute;
-	padding:90px 70px 50px 70px;
-	background:rgba(40,57,101,.9);
+	padding:50px 70px 50px 70px;
+	background:rgba(1, 2, 3, 0.9);
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -534,9 +533,12 @@ a{color:inherit;text-decoration:none}
 	right:0;
 	bottom:0;
 	position:absolute;
-	transform:rotateY(180deg);
+	transform:rotateX(180deg);
 	backface-visibility:hidden;
-	transition:all .4s linear;
+  /*probar hacerlo con esta propiedad, con hover u otro
+  /* transform: translateX(-400px);
+  opacity: .0; */
+	transition:all .5s linear;
 }
 .login-html .sign-in,
 .login-html .sign-up,
@@ -559,7 +561,8 @@ a{color:inherit;text-decoration:none}
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
 	color:#fff;
-	border-color:#1161ee;
+	border-color:brown;
+  
 }
 .login-form{
 	min-height:345px;
@@ -580,20 +583,17 @@ a{color:inherit;text-decoration:none}
 .login-form .group .input,
 .login-form .group .button{
 	border:none;
-	padding:15px 20px;
+	padding:10px 15px;
 	border-radius:25px;
 	background:rgba(255,255,255,.1);
 }
-.login-form .group input[data-type="password"]{
-	text-security:circle;
-	-webkit-text-security:circle;
-}
+
 .login-form .group .label{
 	color:#aaa;
-	font-size:12px;
+	font-size:11px;
 }
 .login-form .group .button{
-	background:#1161ee;
+	background:brown;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -627,7 +627,7 @@ a{color:inherit;text-decoration:none}
 	color:#fff;
 }
 .login-form .group .check:checked + label .icon{
-	background:#1161ee;
+	background:brown;
 }
 .login-form .group .check:checked + label .icon:before{
 	transform:scale(1) rotate(45deg);
@@ -644,7 +644,7 @@ a{color:inherit;text-decoration:none}
 
 .hr{
 	height:2px;
-	margin:60px 0 50px 0;
+	margin:22px 0 11px 0;
 	background:rgba(255,255,255,.2);
 }
 .foot-lnk{
