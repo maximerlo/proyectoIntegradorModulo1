@@ -82,28 +82,30 @@ header {
   text-transform: uppercase;
 }
 
-.logo a {
-  text-decoration: none;
+.logo a img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
 }
-.spanLogo{
+/* /* .spanLogo{
   color:rgb(161, 0, 0);
   font-size: 3rem;
   font-family: 'Anton';
   /* font-family:'PlayfairDisplay'; */
   /* font-family:'Raleway'; */
   /* font-family:'Kollektif'; */
-  text-decoration: none;
-}
+  /* text-decoration: none;
+} */
 
-.spanEslogan{
+/* .spanEslogan{
   color:rgb(44, 70, 78);
   font-size: 1rem;
   font-family: 'Anton';
   /* font-family:'PlayfairDisplay'; */
   /* font-family:'Raleway'; */
-  /* font-family:'Kollektif'; */
-  text-decoration: none;
-}
+  /* font-family:'Kollektif'; 
+  text-decoration: none; 
+} */ 
 
 
 .ul-nav a{
@@ -295,17 +297,24 @@ height: 80vh;
 }
 
 .bigLogo{
-  font-size: 7rem;
+  width: 350px;
+  height: 140px;
+  margin-bottom: 2%;
+ 
 }
-.bigEslogan{
-  font-size: 4rem;
+.info-page img{
+  width: 100%;
+  height: auto;
 }
-
 .description-principal{
   width: 40%;
   font-family:'PoiretOne';
   font-size: 1rem;
   font-weight: 500;
+}
+.description-principal p{
+  margin: 10px;
+  text-align: left;
 }
 
 .btnWelcome{
@@ -475,15 +484,88 @@ footer {
 }
 
 .footer-info{
+  display: flex;
   width: 100%;
   height: 50vh;
 }
+
+.container-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 100%;
+}
+.container-logo img{ 
+  margin-bottom: 2%;
+  width: 35%;
+  height:fit-content;
+}
+.logos-store{
+  margin-top: 2%;
+  display: flex;
+}
+.logoGoogleStore img, .logoAppleStore img{
+  width: 125px;
+  background-color: black;
+  margin: 2px;
+}
+
+
+ .container-support{
+  width: 450px;
+  height: 100%;
+  text-align: center;
+  padding: 15px 0 0 0;
+ }
+
+ .container-support h4{
+   margin: 3%;
+
+ }
+
+ .container-log{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 450px;
+   height: 100%;
+   
+ }
+
+ .container-log h3{
+   margin-top: 5%;
+ }
+
+ .container-log input{
+  width: 65%;
+  border-radius: 50px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  font-weight: 800;
+  border: 2px solid rgb(75, 73, 73);
+  margin-bottom: -30px;
+  font-size: 16px;
+ }
+
+ .btn-suscrip-footer{
+  width: 65%;
+  border-radius: 50px;
+  background-color: brown;
+  padding: 10px 25px;
+  margin-top: 50px;
+  font-weight: 700;
+  border: 1px solid #fff0;
+ }
 
 .footer-copyright{
   width: 100%;
   height: 10vh;
   border-top: 1px solid  rgb(22, 22, 22);
 }
+
+
 
 /*///LOGIN////*/
 
@@ -656,14 +738,47 @@ footer {
 @media (max-width:1205px) and (min-width:960px)  {
   .carousel-item img{
     max-height: 400px;
-    
+  }
+
+  .highlightWrapper{
+    height: auto;
+  }
+  .highlightBox{
+    width: 37%;
+    margin: 2%;
+  }
+
+  .accessibility{
+    height: auto;
+  }
+  .accessBox{
+  width: 25%;
+  margin:2%;
   }
 }
 
 @media (max-width:959px) and (min-width:720px)  {
   .carousel-item img{
     max-height: 300px;
-    
+  }
+  .highlightWrapper{
+    height: auto;
+  }
+  .highlightBox{
+    width: 37%;
+    margin: 2%;
+  }
+
+  .accessibility{
+    height: auto;
+  }
+  .accessBox{
+  width: 28%;
+  margin:2%;
+  }
+  .imgAccess{
+    width: 150px;
+    height: 170px;
   }
 }
 
@@ -672,6 +787,29 @@ footer {
     max-height: 200px;
     
   }
+  .highlightWrapper{
+    height: auto;
+  }
+  .highlightBox{
+    width: 60%;
+    margin: 2%;
+  }
+
+  .accessibility{
+    height: auto;
+  }
+  .accessBox{
+  width: 60%;
+  margin:2%;
+  }
+  footer{
+    height: auto;
+  }
+  .footer-info{
+    height: auto;
+    flex-direction: column;
+  }
+  
 }
 
 @media (max-width:484px) and (min-width:300px)  {
@@ -694,6 +832,31 @@ footer {
 main{
   height: auto;
 }
+
+.highlightWrapper{
+  height: auto;
+}
+.highlightBox{
+  width: 60%;
+  margin: 2%;
+}
+
+.accessibility{
+  height: auto;
+}
+.accessBox{
+width: 60%;
+margin:2%;
+}
+
+footer{
+  height: auto;
+}
+.footer-info{
+  height: auto;
+  flex-direction: column;
+}
+
 }
 
 /*////Prueba ventana fantasma///*/
