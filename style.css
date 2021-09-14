@@ -66,11 +66,9 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  /* position: fixed;
-  z-index: 10; */
   background-color: #0000008c;
-  
 }
+
 .ul-nav {
   display: flex;
   flex-direction: row;
@@ -80,6 +78,7 @@ header {
   width: 50%;
   text-align: center;
   text-transform: uppercase;
+  margin-right: 2%;
 }
 
 .logo a img {
@@ -87,26 +86,6 @@ header {
   height: 95px;
   object-fit: contain;
 }
-/* /* .spanLogo{
-  color:rgb(161, 0, 0);
-  font-size: 3rem;
-  font-family: 'Anton';
-  /* font-family:'PlayfairDisplay'; */
-  /* font-family:'Raleway'; */
-  /* font-family:'Kollektif'; */
-  /* text-decoration: none;
-} */
-
-/* .spanEslogan{
-  color:rgb(44, 70, 78);
-  font-size: 1rem;
-  font-family: 'Anton';
-  /* font-family:'PlayfairDisplay'; */
-  /* font-family:'Raleway'; */
-  /* font-family:'Kollektif'; 
-  text-decoration: none; 
-} */ 
-
 
 .ul-nav a{
   text-decoration: none;
@@ -124,138 +103,6 @@ main{
   height: auto;
 }
 
-
-/* .section-featured-container{
-  display: flex;
-  flex-direction: column;
-  width:100%;
-  justify-content: center;
-  background-color: rgb(46, 0, 0);
-
-}
-
-.featured-box-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-.box-element{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 280px;
-  background-color: brown;
-
-}
-.box-img1, .box-img3 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 90%;
-
-}
-.box-img1 img {
-  object-fit: cover;
-  width: 33%;
-  height: 100%;
-} 
-
-.box-img2 {
-  object-fit: cover;
-  display:grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
-  height: 90%;
-} 
-.box-img2 img {
-width: 100%;
-height: 100%; 
-}
-
-.box-img2 .first{
-grid-area: 1 / 1;
-}
-.box-img2 .second{
-  grid-area: 1 / 2;
-}
-.box-img2 .three{
-  grid-area: 2 / 1;
-
-}
-.box-img2 .four{
-  grid-area: 2 / 2;
-}
-
-.box-img3 img {
-  object-fit: cover;
-  width: 49.7%;
-  height: 100%;
-}
-
-.text-box {
-font-size: 1.1rem;
-font-family: 'Oswald-Light';
-color: white;
-letter-spacing: 1px;
-
-}
-
-.section-card-container{
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  align-items: center;
-  border:violet 2px solid;
-
-}
-
-.section-card-container h2{
-color: brown;
-}
-
-.card-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-
-  flex-wrap: wrap;
-  max-height: auto;
-  border:2px red solid;
-}
-
-.card-element{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  width: 17%;
-  height: 350px;
-  text-align: center;
-  background-color: #323446;
-} */
-
-
-
-
- 
-
-
-/*////////////para que el botón no quede marcado por el hover///
-a {
-   -webkit-tap-highlight-color: rgba(0,0,0,0)
-  }
-  //////////////////*/
-
-
-
-
-  
   /*///SECTION 1 CARROUSEL///*/
 
 
@@ -323,17 +170,20 @@ height: 80vh;
 }
 
 .btnWelcome button{
-border-radius: 20px;
-width: 100px;
-font-family:'Oswald-Light';
-font-weight: 600;
-margin: 0 10px;
-font-size: 0.8rem;
-padding: 3px;
-letter-spacing: 1px;
-text-transform: uppercase;
-border: none;
+ border-radius: 20px;
+ width: 100px;
+ font-family:'Oswald-Light';
+ font-weight: 600;
+ margin: 0 10px;
+ font-size: 0.8rem;
+ padding: 3px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ border: none;
 
+}
+.btnWelcome a{
+  text-decoration: none;
 }
 
 .btnWel-1{
@@ -359,9 +209,7 @@ border: none;
 
 .highlightWrapper{
   
-  /* background-color:rgba(75,0,0,0.9009978991596639); */
-  background-image: url(https://static5.depositphotos.com/1032463/504/i/600/depositphotos_5049546-stock-photo-red-carpet-texture.jpg);
-  filter:brightness(70%);
+   background-color:rgba(75,0,0,0.9009978991596639);
 }
 
 .highlightBox{
@@ -373,17 +221,16 @@ border: none;
   height: 400px;
   background-color: black;
   border-radius: 10px;
+  padding:3%;
 }
 
 .highlightBox h4{
   font-family:'PlayfairDisplay';
-  /* font-weight: bold; */
   color:rgb(203, 210, 214);
   
 }
 
 .highlightBox p{
-  /* font-family:'Raleway'; */
   font-family:'PoiretOne';
   color:rgb(203, 210, 214);
   text-align: center;
@@ -397,8 +244,6 @@ border: none;
   background-color: brown;
   object-fit: contain;
   margin-bottom: 4%;
- 
-  
 }
 
 .imgHL img{
@@ -423,6 +268,7 @@ border: none;
   height: 400px;
   background-color: black;
   border-radius: 10px;
+  padding: 2%;
 }
 
 .imgAccess{
@@ -442,6 +288,7 @@ border: none;
 
 .accessBox h4, p{
   text-align: center;
+  color:#C1C1C1;
 }
 
 /*////FOOTER/////*/
@@ -475,9 +322,8 @@ footer {
   z-index: 3;
 }
 
-
 .social-container i{
-  color: rgb(22, 22, 22);
+  color: #791A1A;
   font-size: 25px;
   font-weight: 600;
   
@@ -512,13 +358,13 @@ footer {
   margin: 2px;
 }
 
-
- .container-support{
+.container-support{
   width: 450px;
   height: 100%;
   text-align: center;
   padding: 15px 0 0 0;
- }
+  color:#C1C1C1;
+}
 
  .container-support h4{
    margin: 3%;
@@ -529,27 +375,28 @@ footer {
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    width: 450px;
    height: 100%;
-   
  }
 
  .container-log h3{
    margin-top: 5%;
+   color:#791A1A;
  }
 
  .container-log input{
-  width: 65%;
-  border-radius: 50px;
-  padding: 10px 25px;
-  margin-top: 20px;
-  font-weight: 800;
-  border: 2px solid rgb(75, 73, 73);
-  margin-bottom: -30px;
-  font-size: 16px;
+   width: 65%;
+   border-radius: 50px;
+   padding: 10px 25px;
+   margin-top: 20px;
+   font-weight: 800;
+   border: 2px solid rgb(75, 73, 73);
+   margin-bottom: -30px;
+   font-size: 16px;
  }
 
- .btn-suscrip-footer{
+.btn-suscrip-footer{
   width: 65%;
   border-radius: 50px;
   background-color: brown;
@@ -563,9 +410,14 @@ footer {
   width: 100%;
   height: 10vh;
   border-top: 1px solid  rgb(22, 22, 22);
+  text-align: center;
 }
+.footer-copyright p{
+  margin-top: 5%;
+  color:#C1C1C1;
+  font-size: 0.8rem;
 
-
+}
 
 /*///LOGIN////*/
 
@@ -577,21 +429,7 @@ footer {
   align-items: center;
   background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://risingjunkiri.com/wp-content/uploads/2015/01/movie-montage.jpg) no-repeat center;
   background-size:cover;
-  
-  /*buscar como se oscurece una imagen*/
-  /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
 }
-/*
-.loginContainer{
-  display: flex;
-  flex-direction: column;
-  width:500px;
-  height: 600px;
-  background-color: black;
-}*/
-
-
-
 
 .login-wrap{
 	width:100%;
@@ -601,6 +439,7 @@ footer {
 	position:relative;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
+
 .login-html{
 	width:100%;
 	height:100%;
@@ -617,9 +456,6 @@ footer {
 	position:absolute;
 	transform:rotateX(180deg);
 	backface-visibility:hidden;
-  /*probar hacerlo con esta propiedad, con hover u otro
-  /* transform: translateX(-400px);
-  opacity: .0; */
 	transition:all .5s linear;
 }
 .login-html .sign-in,
@@ -778,7 +614,7 @@ footer {
   }
   .imgAccess{
     width: 150px;
-    height: 170px;
+    height: 150px;
   }
 }
 
@@ -812,23 +648,64 @@ footer {
   
 }
 
-@media (max-width:484px) and (min-width:300px)  {
-  .carousel-item img{
-    max-height: 155px;
+@media (max-width:484px) and (min-width:280px)  {
+  
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .info-page{
+    background: black;
+    height: auto;
+    position: relative;
+  }
+  .filler{
+    height: auto;
     
   }
+  .carousel-item img{
+    max-height: 155px;
+  }
+  .description-principal{
+    width: 100%;
+  }
+  .description-principal p{
+    text-align: center;
+  }
+  
+  
 .logo a, p {
   font-size: 2rem;
 }
-.ul-nav a{
+.ul-nav{
   width: 70%;
+  
+}
+.ul-nav a{
   font-size: 0.8rem;
 }
+
+.description-principal p{
+  font-size: 0.8rem;
+}
+.btnWelcome{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10%;
+  text-align: center;
+  
+}
+
 .card-element{
   width: 250px;
   height: 350px;
   margin-bottom: 1rem;
 }
+
 main{
   height: auto;
 }
@@ -837,16 +714,26 @@ main{
   height: auto;
 }
 .highlightBox{
-  width: 60%;
+  width: 70%;
   margin: 2%;
+}
+.highlightBox p{
+  font-size: 1rem;
 }
 
 .accessibility{
   height: auto;
 }
 .accessBox{
-width: 60%;
-margin:2%;
+  width: 70%;
+  margin:2%;
+}
+.imgAccess {
+    width: 170px;
+    height: 170px;
+  }
+.accessBox p{
+  font-size: 1rem;
 }
 
 footer{
@@ -858,31 +745,3 @@ footer{
 }
 
 }
-
-/*////Prueba ventana fantasma///*/
-/* .modal-contenido{
-  background-color:rgb(24, 23, 23);
-  width:300px;
-  padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
- 
-}
-.modal{
-  display: block!important;
-  background-color: rgba(0, 0, 0, 0.609);
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  opacity:0; 
-  pointer-events:none;
-  transition: all 1s;
-  z-index: 100;
-  
-}
-#ingreso:target{
-  opacity:1;
-  pointer-events:auto;
-} */
