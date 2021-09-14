@@ -413,7 +413,7 @@ footer {
   text-align: center;
 }
 .footer-copyright p{
-  margin-top: 5%;
+  padding: 1%;
   color:#C1C1C1;
   font-size: 0.8rem;
 
@@ -618,37 +618,7 @@ footer {
   }
 }
 
-@media (max-width:719px) and (min-width:485px)  {
-  .carousel-item img{
-    max-height: 200px;
-    
-  }
-  .highlightWrapper{
-    height: auto;
-  }
-  .highlightBox{
-    width: 60%;
-    margin: 2%;
-  }
-
-  .accessibility{
-    height: auto;
-  }
-  .accessBox{
-  width: 60%;
-  margin:2%;
-  }
-  footer{
-    height: auto;
-  }
-  .footer-info{
-    height: auto;
-    flex-direction: column;
-  }
-  
-}
-
-@media (max-width:484px) and (min-width:280px)  {
+@media (max-width:719px) and (min-width:280px)  {
   
   .carouselContainer {
     display: flex;
